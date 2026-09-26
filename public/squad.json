@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Alisson Becker",
+    "country": "Brazil",
+    "image": "https://i.ibb.co.com/hJ7WjfPz/images.jpg",
+    "position": "GK",
+    "rating": 8.9,
+    "price": 95
+  },
+  {
+    "id": 2,
+    "name": "Thibaut Courtois",
+    "country": "Belgium",
+    "image": "https://i.ibb.co.com/W14Hj08/images-2.jpg",
+    "position": "GK",
+    "rating": 9.0,
+    "price": 105
+  },
+  {
+    "id": 3,
+    "name": "Virgil van Dijk",
+    "country": "Netherlands",
+    "image": "https://i.ibb.co.com/4nkyXHM2/download.jpg",
+    "position": "DEF",
+    "rating": 8.8,
+    "price": 110
+  },
+  {
+    "id": 4,
+    "name": "Ruben Dias",
+    "country": "Portugal",
+    "image": "https://i.ibb.co.com/WpBpJ3f2/download2.jpg",
+    "position": "DEF",
+    "rating": 8.5,
+    "price": 100
+  },
+  {
+    "id": 5,
+    "name": "William Saliba",
+    "country": "France",
+    "image": "https://i.ibb.co.com/FkCpBmH4/images-1.jpg",
+    "position": "DEF",
+    "rating": 8.6,
+    "price": 105
+  },
+  {
+    "id": 6,
+    "name": "Antonio Rudiger",
+    "country": "Germany",
+    "image": "https://i.ibb.co.com/rGjWG0L1/images-2.jpg",
+    "position": "DEF",
+    "rating": 8.4,
+    "price": 90
+  },
+  {
+    "id": 7,
+    "name": "Achraf Hakimi",
+    "country": "Morocco",
+    "image": "https://i.ibb.co.com/bR8LXRzx/images-3.jpg",
+    "position": "DEF",
+    "rating": 8.7,
+    "price": 115
+  },
+  {
+    "id": 8,
+    "name": "Kevin De Bruyne",
+    "country": "Belgium",
+    "image": "https://i.ibb.co.com/LzJnZSKH/images-4.jpg",
+    "position": "MID",
+    "rating": 8.7,
+    "price": 120
+  },
+  {
+    "id": 9,
+    "name": "Rodri",
+    "country": "Spain",
+    "image": "https://i.ibb.co.com/6JrtvhHD/images-5.jpg",
+    "position": "MID",
+    "rating": 9.0,
+    "price": 140
+  },
+  {
+    "id": 10,
+    "name": "Jude Bellingham",
+    "country": "England",
+    "image": "https://i.ibb.co.com/RdRxRnM/images-6.jpg",
+    "position": "MID",
+    "rating": 9.0,
+    "price": 160
+  },
+  {
+    "id": 11,
+    "name": "Luka Modric",
+    "country": "Croatia",
+    "image": "https://i.ibb.co.com/Cp5m8DrH/download-1.jpg",
+    "position": "MID",
+    "rating": 8.6,
+    "price": 85
+  },
+  {
+    "id": 12,
+    "name": "Pedri",
+    "country": "Spain",
+    "image": "https://i.ibb.co.com/3mrs4TWw/images-7.jpg",
+    "position": "MID",
+    "rating": 8.5,
+    "price": 110
+  },
+  {
+    "id": 13,
+    "name": "Kylian Mbappe",
+    "country": "France",
+    "image": "https://i.ibb.co.com/vCZ3mCr5/images-8.jpg",
+    "position": "FWD",
+    "rating": 9.2,
+    "price": 180
+  },
+  {
+    "id": 14,
+    "name": "Erling Haaland",
+    "country": "Norway",
+    "image": "https://i.ibb.co.com/KzwZZpWd/images-9.jpg",
+    "position": "FWD",
+    "rating": 9.1,
+    "price": 175
+  },
+  {
+    "id": 15,
+    "name": "Mohamed Salah",
+    "country": "Egypt",
+    "image": "https://i.ibb.co.com/YBsmN3yn/images-10.jpg",
+    "position": "FWD",
+    "rating": 9.0,
+    "price": 150
+  }
+]

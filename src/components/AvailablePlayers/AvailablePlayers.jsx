@@ -1,13 +1,13 @@
 import React, { use } from 'react';
 import Players from '../Players/Players';
 
-const AvailablePlayers = ({players}) => {
+const AvailablePlayers = ({players,setSelected,selected}) => {
     const usePlayers=use(players)
     
     return (
-        <div className='grid grid-cols-3 mt-8'>
+        <div className='grid grid-cols-3 mt-8 max-w-[1200px] mx-auto'>
             {
-                usePlayers.map(player=><Players key={player.id} player={player}></Players>)
+                usePlayers.map(player=><Players key={player.id} player={player} selected={selected} setSelected={setSelected}></Players>)
             }
         </div>
     );

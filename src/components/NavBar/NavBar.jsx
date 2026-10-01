@@ -2,7 +2,7 @@ import React from "react";
 
 import currency from "../../assets/Currency.png"
 
-const NavBar = () => {
+const NavBar = ({availableCoin}) => {
   return (
     <div className="navbar bg-base-100 shadow-sm max-w-[1200px] mx-auto ">
       <div className="flex-1">
@@ -18,7 +18,7 @@ const NavBar = () => {
            
         <p>Coin
        
-         90000</p>
+         {availableCoin}</p>
           
       
       </div>

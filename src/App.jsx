@@ -14,11 +14,23 @@ const players = fotballers();
 function App() {
   const [toggle,setToggle]=useState(true)
   const [selected, setSelected]=useState([])
+  const [availableCoin,setCoin]=useState(1000)
 
-// console.log(selected)
+  const handleCoin=(playerPrice)=>{
+      
+      const afterBuy=availableCoin-playerPrice
+      
+      if(availableCoin<playerPrice){
+        toast("Not enough money")
+        return
+      }
+      setCoin(afterBuy)
+  }
+
+
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar availableCoin={availableCoin}></NavBar>
 
       <div className="w-max-[1200px] mx-auto">
 
@@ -38,12 +50,12 @@ function App() {
        {
         toggle?<div>
          <Suspense fallback="Data Loaded...">
-          <AvailablePlayers players={players}  selected={selected} setSelected={setSelected}></AvailablePlayers>
+          <AvailablePlayers players={players} availableCoin={availableCoin} selected={selected} setSelected={setSelected} handleCoin={handleCoin}></AvailablePlayers>
         </Suspense>
 
         
        </div>
-       :<SlectedPlayers></SlectedPlayers>
+       :<SlectedPlayers selected={selected}></SlectedPlayers>
        }
        
       </div>

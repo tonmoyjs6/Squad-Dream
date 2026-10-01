@@ -1,7 +1,14 @@
 import React from "react";
 import { toast } from "react-toastify";
 
-const Players = ({ player, setSelected, selected }) => {
+const Players = ({ player, setSelected, selected,handleCoin}) => {
+
+
+const handlePlayerPrice=(price)=>{
+  handleCoin(price)
+  
+  
+}
 
   const handleSelcted = (selPlayer) => {
     const fileterd = selected.filter((sepl) => sepl.id === selPlayer.id);
@@ -47,7 +54,12 @@ const Players = ({ player, setSelected, selected }) => {
       }   
   };
    setSelected([...selected, selPlayer]);
+
+
+
 }
+
+
   return (
     <div className="card bg-base-100  shadow-sm">
       <figure>
@@ -63,7 +75,10 @@ const Players = ({ player, setSelected, selected }) => {
         <p>Price:{player.price}$</p>
         <div className="card-actions justify-end mr-40 ">
           <button
-            onClick={() => handleSelcted(player)}
+            onClick={() =>{ handleSelcted(player)
+              
+              handlePlayerPrice(player.price)
+            }}
             className="btn btn-primary"
           >
             Choose Player{" "}

@@ -1,6 +1,20 @@
 import React from "react";
 
-const Selection = ({ player }) => {
+const Selection = ({ player,setCoin,availableCoin,setSelected,selected}) => 
+  
+  {
+  const removePlayer=(price)=>{
+    const fillWithRemoveCoin=availableCoin+price
+
+    setCoin(fillWithRemoveCoin)
+   
+
+  }
+
+  const handelAfterRemovePlayer=(deletedPlayer)=>{
+      const removeThePlayer=selected.filter(pl=>pl.id !==deletedPlayer.id)
+      setSelected(removeThePlayer)
+  }
   return (
     <div className="grid grid-cols-3">
       <div className="card bg-base-100 w-96 shadow-sm">
@@ -17,7 +31,12 @@ const Selection = ({ player }) => {
 
           
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Remove</button>
+            <button className="btn btn-primary" onClick={()=>{
+              removePlayer(player.price)
+
+              handelAfterRemovePlayer(player)
+              
+              }}>Remove</button>
           </div>
         </div>
       </div>

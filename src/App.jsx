@@ -55,7 +55,7 @@ function App() {
 
         
        </div>
-       :<SlectedPlayers selected={selected}></SlectedPlayers>
+       :<SlectedPlayers selected={selected} setSelected={setSelected} availableCoin={availableCoin} setCoin={setCoin}></SlectedPlayers>
        }
        
       </div>
